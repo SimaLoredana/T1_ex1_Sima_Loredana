@@ -1,0 +1,33 @@
+
+T=2;
+f=1/T;
+%1                             
+t=0:0.002:2*T;
+y=-0.25+0.75*square(f*2*pi*t,25);
+subplot (2,1,1) 
+plot(t,y)
+axis([0 4 -1.2 0.6])
+title('Semnal dreptunghiular 2ms')
+xlabel('Timp (sec)')
+ylabel('Amplitudine')
+grid
+%2
+t=0:0.02:8.5*T;   
+y=-0.25+0.75*square(f*2*pi*t,25);
+subplot (223) 
+plot(t,y)
+axis([0 10 -1.2 0.6])
+title('Semnal dreptunghiular 20ms')
+xlabel('Timp (sec)')
+ylabel('Amplitudine')
+grid
+%3
+t=0:0.2:8.5*T; 
+y=-0.25+0.75*square(f*2*pi*t,25);
+subplot (224) 
+plot(t,y)
+axis([0 10 -1.2 0.6])
+title('Semnal dreptunghiular 200ms')
+xlabel('Timp (sec)')
+ylabel('Amplitudine')
+grid
