@@ -10,7 +10,7 @@ x = zeros(1,size(t,2)); % initializarea lui x ( semnalul dreptunghiular) cu zero
 x(t<=D/2) =1; % de la 0 la D/2 x are valoarea 1 ( generam amplitundinea semnalului)
 x(t>P-D/2) =1; % de la D/2 la P x are valoarea 1 ( generam amplitundinea semnalului)
 t_4perioade = 0:0.02:4*P-0.02; % vectorul timp pentru reprezentarea pe 4 perioade
-x_4perioade = repmat(x,1,4); % vectorul x pentru reprezentarea pe 4 perioade ( genram 4 perioade de semnal dreptunghi)
+x_4perioade = repmat(x,1,4); % vectorul x pentru reprezentarea pe 4 perioade ( generam 4 perioade de semnal dreptunghi)
    
 % integrala numerica prin functia trapz
 for k = -N:N
